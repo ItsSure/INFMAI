@@ -2,27 +2,39 @@
 <html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/javascript.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/assets/icons/svg/logo.svg"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script type="module" src="src/js/main.js"></script>
-    <title>Final Project</title>
+    <title>INFMAI</title>
+    <meta
+      name="description"
+      content="Explora rápidamente todas las inteligencias artificiales disponibles.
+      Nuestra plataforma extensible está repleta de características para
+      ayudarte a encontrar exactamente lo que necesitas. Utiliza nuestras
+      opciones de filtrado para personalizar tu búsqueda."
+    />
   </head>
   <body>
     <div class="d-flex flex-column min-vh-100">
       <!-- Nav -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <div class="d-flex">
             <img
-              src="javascript.svg"
+              src="src/assets/icons/svg/logo.svg"
               alt="Logo"
-              width="30"
-              height="24"
+              width="50"
+              height="50"
               class="d-inline-block align-text-top"
             />
-            Sure
-          </a>
+            <a class="navbar-brand ms-2" href="#"> INFMAI </a>
+          </div>
+
           <button
             class="navbar-toggler"
             type="button"
@@ -42,28 +54,43 @@
                   aria-current="page"
                   href="/"
                   onclick="route()"
-                  >Home</a
+                  >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about" onclick="route()">About</a>
+                <a class="nav-link" href="/explore" onclick="route()"
+                  >Explorar</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/lorem" onclick="route()">lorem</a>
+                <a class="nav-link" href="/about" onclick="route()">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contact" onclick="route()"
+                  >Contacto</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
       <!-- Main -->
-      <div id="main-page" class="flex-grow-1"></div>
+      <div
+        id="main-page"
+        class="d-flex justify-content-center flex-grow-1"
+      ></div>
       <!-- Site footer -->
       <footer class="bg-body-tertiary mt-3">
         <div class="container py-4">
           <div class="row">
             <div class="col-12 col-md">
-              <img src="javascript.svg" alt="Logo" width="40" height="40" />
-              <small class="d-block my-3 text-muted">© 2024</small>
+              <img
+                src="src/assets/icons/svg/logo.svg"
+                alt="Logo"
+                width="40"
+                height="40"
+              />
+              <small class="d-block my-3 text-muted">INFMAI © 2024</small>
             </div>
             <div class="col-6 col-md">
               <h5><b>Features</b></h5>
@@ -121,25 +148,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-6 col-md">
-              <h5><b>Resources</b></h5>
-              <ul class="list-unstyled text-small">
-                <li>
-                  <a class="text-muted" href="/" onclick="route()">Business</a>
-                </li>
-                <li>
-                  <a class="text-muted" href="/" onclick="route()">Education</a>
-                </li>
-                <li>
-                  <a class="text-muted" href="/" onclick="route()"
-                    >Government</a
-                  >
-                </li>
-                <li>
-                  <a class="text-muted" href="/" onclick="route()">Gaming</a>
-                </li>
-              </ul>
-            </div>
+
             <div class="col-6 col-md">
               <h5><b>About</b></h5>
               <ul class="list-unstyled text-small">

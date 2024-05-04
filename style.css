@@ -1,2 +1,126 @@
 @import url(https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css);
 
+/* Home Section */
+
+img {
+  max-width: 100%;
+}
+
+.button {
+  background-color: #000000;
+  border: 2px solid #000000;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  padding: 12px 32px 14px 32px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.home-page {
+  display: flex;
+  margin: 2em auto 0 auto;
+  max-width: 45em;
+  font-size: 24px;
+  line-height: 1.4;
+  padding: 20px;
+}
+
+.home-page h1 {
+  font-size: 1em;
+}
+
+.home-page .button {
+  margin: 1em 0;
+}
+
+.content2 {
+  width: 50%;
+}
+
+/* Contact Section */
+
+.form-contact {
+  width: 500px;
+  gap: 25px;
+}
+
+.titulo-contact {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.button-contact {
+  background-color: #1b2735;
+  border: 1px solid #1b2735;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
+  &:hover {
+    border: 1px solid white;
+    background-color: white;
+    color: #1b2735;
+  }
+}
+
+/* Opcional: Pantallas más pequeñas que 576px (típicamente smartphones en modo retrato) */
+@media only screen and (max-width: 575px) {
+  .home-page {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .content1,
+  .content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* Pantallas más pequeñas que 768px (típicamente smartphones) */
+@media only screen and (max-width: 768px) {
+  .home-page {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .content1,
+  .content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* Pantallas entre 768px y 1024px (típicamente tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .home-page {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .content1,
+  .content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  img {
+    max-width: 50%;
+  }
+}
