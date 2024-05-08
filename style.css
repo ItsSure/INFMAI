@@ -32,6 +32,21 @@ img {
   padding: 20px;
 }
 
+h1 span {
+  color: red;
+}
+
+.logo {
+  object-fit: contain;
+  animation: animate 2s infinite ease alternate;
+}
+
+@keyframes animate {
+  to {
+    transform: translateY(20px);
+  }
+}
+
 .home-page h1 {
   font-size: 1em;
 }
@@ -47,7 +62,6 @@ img {
 /* Contact Section */
 
 .form-contact {
-  width: 500px;
   gap: 25px;
 }
 
@@ -123,4 +137,32 @@ img {
   img {
     max-width: 50%;
   }
+}
+
+/* animation cards */
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.animation-card {
+  view-timeline-name: --card;
+  view-timeline-axis: block;
+  animation-timeline: --card;
+  animation-name: show;
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+.card-img {
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 200px !important;
 }
