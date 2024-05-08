@@ -27,6 +27,7 @@ export default defineConfig(({ command, mode }) => {
             about: resolve(__dirname, "src", "pages", "about.html"),
             contact: resolve(__dirname, "src", "pages", "contact.html"),
             explore: resolve(__dirname, "src", "pages", "explore.html"),
+            explorejs: resolve(__dirname, "src", "js", "explore.js"),
           },
         },
       },
