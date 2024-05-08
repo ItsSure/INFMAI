@@ -1,1 +1,38 @@
-<h1>explorer</h1>
+<div class="d-flex flex-column align-items-stretch">
+  <h1 class="text-center mt-3">Explorer</h1>
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+          Filtro por categoría
+        </button>
+      </h2>
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse"
+        data-bs-parent="#accordionExample"
+      >
+        <div class="accordion-body">
+          <select class="form-select" aria-label="Default select example" onchange="filterCards(event)">
+            <option value="0" selected>Todas las IA</option>
+            <option value="1">Arte y Creatividad</option>
+            <option value="2">Inteligencias Artificiales Conversacionales</option>
+            <option value="3">Educación</option>
+            <option value="4">Desarrollo y programación</option>
+            <option value="5">Productividad</option>
+            <option value="6">Búsquedas e investigación</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <ai-cards></ai-cards>
+</div>
