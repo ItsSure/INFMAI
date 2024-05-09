@@ -4,7 +4,7 @@
   src:
     url("src/assets/fonts/Geist-Regular.ttf") format("truetype"),
     /* Para navegadores que admiten TrueType */
-    url("src/assets/fonts/Geist-Regular.woff2") format("woff"); /* Para navegadores que admiten WOFF */
+      url("src/assets/fonts/Geist-Regular.woff2") format("woff"); /* Para navegadores que admiten WOFF */
 }
 /* Home Section */
 
@@ -106,6 +106,7 @@ h1 span {
   .home-page {
     flex-direction: column-reverse;
     width: 100%;
+    margin: 0px;
   }
 
   .content1,
@@ -114,6 +115,10 @@ h1 span {
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+
+  .content1 {
+    margin-top: 30px;
   }
 }
 
@@ -122,6 +127,7 @@ h1 span {
   .home-page {
     flex-direction: column-reverse;
     width: 100%;
+    margin: 0px;
   }
 
   .content1,
@@ -130,6 +136,10 @@ h1 span {
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+
+  .content1 {
+    margin-top: 30px;
   }
 }
 
@@ -138,6 +148,7 @@ h1 span {
   .home-page {
     flex-direction: column-reverse;
     width: 100%;
+    margin: 0px;
   }
 
   .content1,
@@ -146,6 +157,10 @@ h1 span {
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+
+  .content1 {
+    margin-top: 30px;
   }
 
   img {
