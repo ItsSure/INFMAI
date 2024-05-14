@@ -73,10 +73,6 @@ const handleLocation = async () => {
 
   if (path === "/explore") {
     renderCards(data);
-    const selectElement = document.getElementById("category-filter");
-    if (selectElement) {
-      selectElement.addEventListener("change", filterCards);
-    }
   }
 };
 
