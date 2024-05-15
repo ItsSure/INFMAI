@@ -176,5 +176,6 @@ h1 span {
 .card-img {
   object-fit: cover !important;
   width: 100% !important;
-  height: 200px !important;
+  height: 220px !important;
+  background-blend-mode: multiply;
 }

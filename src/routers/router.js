@@ -11,7 +11,7 @@ const route = (event) => {
 const createCardElement = (element) => {
   const cardTemplate = document.createElement("template");
   cardTemplate.innerHTML = /*html*/ `
-    <div class="card text-bg-dark mb-3 animation-card" style="max-width: 800px">
+    <div class="card mb-3 animation-card" style="max-width: 800px">
       <div class="row g-0">
         <div class="col-md-4">
           <img src="${element.imageurl}" class="img-fluid card-img rounded-start" alt="..." />
