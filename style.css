@@ -84,23 +84,6 @@ h1 span {
   font-weight: bold;
 }
 
-.button-contact {
-  background-color: #1b2735;
-  border: 1px solid #1b2735;
-  color: white;
-  padding: 15px;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.5s ease;
-
-  &:hover {
-    border: 1px solid white;
-    background-color: white;
-    color: #1b2735;
-  }
-}
-
 /* Opcional: Pantallas más pequeñas que 576px (típicamente smartphones en modo retrato) */
 @media only screen and (max-width: 575px) {
   .home-page {
